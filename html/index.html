@@ -17,49 +17,79 @@
                 <ul>
                     <li>HOME</li>
                     <li>SOBRE MÍ</li>
-                    <li>MIS PROYECTOS</li>
-                    <li>CONTACTO</li>
+                    <li><a href="#section-proyectos">PROYECTOS</a></li>
+                    <li><a href="#formulario-contacto">CONTACTO</a></li>
                 </ul>
             </div>
         </nav>
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </header>
     <main>
         <aside class="contenedor-redes">
             <ul>
-                <li><a href="https://www.instagram.com/herediamatias_/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="https://github.com/MatiasHerediagit"><i class="fa-brands fa-github"></i></a></li>
+                <li id="instagram-logo"><a href="https://www.instagram.com/herediamatias_/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li id="youtube-logo"><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <li id="github-logo"><a href="https://github.com/MatiasHerediagit" target="_blank"><i class="fa-brands fa-github"></i></a></li>
             </ul>
         </aside>
-        <section>
+        <section id="section-presentacion">
             <div class="contenedor-sobre-mi">
                 <h4>Full Stack</h4>
                 <h3>Jr Developer</h3>
-                <h1>Matias Heredia</h1>
-                <p>Me apasiona la tecnología y tengo un gran interés en el desarrollo web, tanto en front-end como en back-end. Soy una persona dedicada y comprometida, siempre dando lo mejor de mí en cada proyecto. Mi objetivo es crear soluciones innovadoras y eficientes que marquen una diferencia.</p>
+                <h2>Matias Heredia</h2>
+                <p>Me apasiona la tecnología y tengo un gran interés por desarrollo web, tanto front-end como back-end. <br> Soy una persona dedicada y comprometida, siempre dando lo mejor de mí en cada proyecto. <br> Mi objetivo es crear soluciones innovadoras y eficientes que marquen una diferencia.</p>
                 <div>
-                    <a href="">
+                    <a href="https://www.linkedin.com" target="_blank">
                         <button>CV</button>
                     </a>
-                    <a href="">
-                        <button><i class="fa-solid fa-play"></i>Mirá mis videos</button>
-                    </a>
+                    
                 </div>
             </div>
-            <div>
-                <a href="">
-                    <button>CV</button>
-                </a>
-                <a href="">
-                    <button><i class="fa-solid fa-play"></i>Mirá mis videos</button>
-                </a>
-            </div>
         <div class="contenedor-img-principal">
-            <img class="img-principal" src="" alt="Imagen Matias Heredia">
+            <img class="img-principal" src="../images/IMG_20210129_214505_366.jpg" alt="Imagen Matias Heredia">
         </div>
         </section>
-        <form action=""></form>
+        <h3 class="titulo-proyectos">Mis Proyectos</h3>
+        <section id="section-proyectos">
+            <article>
+                <h5>E-Commerce Mercado Liebre</h5>
+                <img src="../images/Captura Mercado Liebre.png" alt="Imagen web Mercado Liebre">
+                <div>
+                    <p>Este proyecto fue realizado como parte del curso de maquetador web de la Fundación Formar. Consistía en replicar la página oficial de Mercado Libre, destacando habilidades en diseño web y maquetación.</p>
+                </div>
+            </article>
+            <article>
+                <h5>Web Instituto Musical</h5>
+                <img src="../images/captura instituto musica.png" alt="Imagen Instituto Musica">
+                <div>
+                    <p>Este proyecto fue desarrollado como parcial de una materia universitaria. La consigna era crear una página web para un instituto de música, aplicando los conocimientos adquiridos de HTML y CSS hasta la fecha.</p>
+                </div>
+            </article>
+            <article>
+                <h5>E-Commerce Kitchening</h5>
+                <img src="../images/captura kitchening (1).png" alt="Imagen E-Commerce kitchening">
+                <div>
+                    <p>Este proyecto fue un esfuerzo colaborativo en el curso de la Fundación Formar, donde trabajamos junto a nuestros compañeros y el profesor. Aplicamos técnicas avanzadas de diseño web, incluyendo media queries para una mejor responsividad.</p>
+                </div>
+            </article>
+        </section>
+        <div class="contenedor-formulario">
+            <form id="formulario-contacto">
+              <h5>Contacto</h5>
+              <label>Nombre:</label>
+              <input type="text"  required>
+              <label>Email:</label>
+              <input type="email"  required>
+              <label>Mensaje:</label>
+              <textarea  rows="5" required></textarea>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy; 2024 Matias Heredia. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html> 
